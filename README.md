@@ -40,3 +40,4 @@ As dependências que este projeto utiliza são:
 
 1. **vvs_core**: Pacote interno da VVS Sistemas.
 2. **equatable**: Igualdade entre classes.
+3. **dio**: Executar requisições HTTP.
