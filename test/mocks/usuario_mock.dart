@@ -1,4 +1,3 @@
-
 import 'dart:convert';
 
 import 'package:vvs_autenticacao/domain/entities/usuario.dart';
@@ -120,3 +119,28 @@ String get usuarioViniciusMockJson => """
 	]
 }
 """;
+
+String get usuarioSemRecursoJson => """{
+  "sub": "09a3fecb-7a4c-4c5f-b29a-6abad96af1dc",
+  "http://schemas.vvssistemas.com.br/ws/identity/permissao": "",
+  "http://schemas.vvssistemas.com.br/ws/identity/claims/recurso/": "",
+  "locale": "pt-BR",
+  "updated_at": "9/29/2022 3:15:52 PM",
+  "profile": "http://api-identitymanager.desenvolvimento.vvssistemas.com.br",
+  "website": "http://api-identitymanager.desenvolvimento.vvssistemas.com.br",
+  "family_name": "tecnologia",
+  "zoneinfo": "Brasil/Rio de Janeiro",
+  "given_name": "total",
+  "picture": "http://api-identitymanager.desenvolvimento.vvssistemas.com.br",
+  "name": "total tech tecnologia",
+  "nickname": "totaltechtecnologia@gmail.com",
+  "preferred_username": "total tech tecnologia",
+  "middle_name": "tech",
+  "http://schemas.vvssistemas.com.br/ws/identity/claims/usuario/email": "totaltechtecnologia@gmail.com",
+  "http://schemas.vvssistemas.com.br/ws/identity/claims/usuario/login": "totaltechtecnologia@gmail.com",
+  "http://schemas.vvssistemas.com.br/ws/identity/claims/usuario/nome": "total tech tecnologia",
+  "http://schemas.vvssistemas.com.br/ws/identity/claims/usuario/id": "09a3fecb-7a4c-4c5f-b29a-6abad96af1dc",
+  "http://schemas.vvssistemas.com.br/ws/identity/claims/usuario/telefoneprincipal": "15974045684",
+  "http://schemas.vvssistemas.com.br/ws/identity/claims/usuario/gruposEmpresa": "021605",
+  "http://schemas.vvssistemas.com.br/ws/identity/claims/usuario/gruposEmpresaResponsavel": "021605"
+}""";

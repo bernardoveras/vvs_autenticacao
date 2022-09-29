@@ -31,6 +31,13 @@ void main() {
     expect(entityFromJson.recursos, isNotEmpty);
   });
 
+  test('Deve retornar uma String do Json sem recurso', () {
+    var entityFromJson = UsuarioMapper.fromJson(usuarioSemRecursoJson);
+
+    expect(entityFromJson.gruposEmpresa, isNotEmpty);
+    expect(entityFromJson.recursos, isEmpty);
+  });
+
   test('Deve retornar um Map com as keys certas', () {
     var map = UsuarioMapper.toMap(entity);
 

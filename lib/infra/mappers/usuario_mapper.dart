@@ -73,7 +73,7 @@ class UsuarioMapper {
         for (var recurso in recursosMap) {
           recursos.add(_decodeRecurso(recurso));
         }
-      } else if (recursosMap is String) {
+      } else if (recursosMap is String && recursosMap.isNotEmpty) {
         recursos.add(_decodeRecurso(recursosMap));
       }
     }
